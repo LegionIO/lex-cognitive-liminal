@@ -74,26 +74,26 @@ module Legion
 
           def liminal_report
             {
-              total_crossings:        @crossings.size,
-              active_count:           active_crossings.size,
-              liminal_count:          liminal_crossings.size,
-              completed_count:        completed_crossings.size,
-              fertile_count:          fertile_crossings.size,
-              peak_count:             peak_crossings.size,
-              average_ambiguity:      average_ambiguity,
-              average_potential:      average_creative_potential,
-              liminal_density:        liminal_density,
-              most_liminal:           most_liminal(limit: 3).map(&:to_h)
+              total_crossings:   @crossings.size,
+              active_count:      active_crossings.size,
+              liminal_count:     liminal_crossings.size,
+              completed_count:   completed_crossings.size,
+              fertile_count:     fertile_crossings.size,
+              peak_count:        peak_crossings.size,
+              average_ambiguity: average_ambiguity,
+              average_potential: average_creative_potential,
+              liminal_density:   liminal_density,
+              most_liminal:      most_liminal(limit: 3).map(&:to_h)
             }
           end
 
           def to_h
             {
-              total_crossings:   @crossings.size,
-              active:            active_crossings.size,
-              liminal:           liminal_crossings.size,
-              avg_ambiguity:     average_ambiguity,
-              avg_potential:     average_creative_potential
+              total_crossings: @crossings.size,
+              active:          active_crossings.size,
+              liminal:         liminal_crossings.size,
+              avg_ambiguity:   average_ambiguity,
+              avg_potential:   average_creative_potential
             }
           end
 
